@@ -1,0 +1,14 @@
+# Optional Requirements for Evaluation Metrics
+# Install with: pip install -r requirements_evaluation.txt
+
+# ROUGE Scores (lightweight, ~5MB)
+rouge-score==0.1.2
+
+# BERTScore (requires PyTorch, ~500MB models on first run)
+bert-score==0.3.13
+torch>=2.0.0
+
+# Already included in base requirements:
+# numpy (for statistical computations)
+# difflib (Python standard library - for sequence matching)
+

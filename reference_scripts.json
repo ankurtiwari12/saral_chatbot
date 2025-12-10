@@ -1,0 +1,17 @@
+{
+  "NIPS-2017-attention-is-all-you-need-Paper.pdf": {
+    "title": "Attention Is All You Need",
+    "reference_script": "The Transformer model, introduced in 2017, revolutionized neural machine translation by relying entirely on attention mechanisms without recurrence or convolution. The architecture consists of an encoder-decoder structure where multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. The scaled dot-product attention is computed using Query, Key, and Value matrices with the formula: Attention(Q,K,V) = softmax(QK^T/sqrt(d_k))V. Position-wise feed-forward networks are applied to each position separately and identically. Positional encodings are added to the input embeddings to inject information about the relative or absolute position of tokens in the sequence. The model achieved state-of-the-art results on WMT 2014 English-to-German and English-to-French translation tasks while being significantly more parallelizable and requiring less time to train than recurrent architectures."
+  },
+  "privaypreservingrecommendationsystem.pdf": {
+    "title": "Privacy-Preserving Recommendation System",
+    "reference_script": "Privacy-preserving recommendation systems address the critical challenge of protecting user data while providing accurate personalized recommendations. Homomorphic encryption enables computations on encrypted data without decryption, allowing two parties to compute collaborative filtering metrics like Pearson correlation on private data. The ElGamal encryption scheme provides multiplicative homomorphism where the product of two ciphertexts equals the encryption of the product of plaintexts. The approach allows users to encrypt their rating vectors with a public key, and the server can compute similarity scores without accessing raw ratings. Key equations include: (r_ij - r_i) * (r_kj - r_k) for similarity computation on encrypted data. This method balances privacy preservation with recommendation accuracy, avoiding centralized servers that could compromise user data. Experimental results demonstrate that privacy-preserving approaches can achieve comparable accuracy to non-private methods while maintaining strong security guarantees."
+  },
+  "_instructions": {
+    "description": "Human-authored reference scripts for ROUGE/BERTScore evaluation",
+    "usage": "The system will automatically load the reference script based on the uploaded PDF filename",
+    "format": "Each PDF filename maps to an object with 'title' and 'reference_script' fields",
+    "note": "Edit the 'reference_script' field with your human-authored content for accurate evaluation"
+  }
+}
+
